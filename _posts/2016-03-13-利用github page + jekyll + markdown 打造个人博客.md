@@ -18,3 +18,6 @@ tags : [jekyll, web]
 ## Tips
 - css失效：直接Fork后推到本人的github page上，css无效，后来发现需要在[_config.yml](https://github.com/quantumlaser/quantumlaser.github.io/blob/master/_config.yml)文件中更改**production_url**，注释掉**BASE_PATH**，因为本人配置了DNS解析和CNAME。
 - 上一步解决了首页的css失效问题，但是对于具体的blog的css依然失效，最后发现所有的css指向了:[default.html](https://github.com/quantumlaser/quantumlaser.github.io/blob/master/_includes/themes/twitter/default.html)。通过手动更改18-21行的css路径，终于解决了css问题。原作者此文件[链接](https://github.com/enml/blog/blob/jekyll-blog/_includes/themes/twitter/default.html)
+
+## Problems
+- 升级kramdown, rouge后代码高亮时不能自动换行，表格没有现况
