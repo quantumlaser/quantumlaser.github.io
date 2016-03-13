@@ -56,7 +56,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  # BASE_PATH : /quantumlaser.github.io
+  BASE_PATH : /quantumlaser.github.io
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -103,13 +103,13 @@ JB :
     provider : google
     google :
         tracking_id : 'UA-75039386-1'
-    getclicky :
-      site_id :
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+    #getclicky :
+    #  site_id :
+    #mixpanel :
+    #    token : '_MIXPANEL_TOKEN_'
+    # piwik :
+    #    baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+    #     idsite : '1'                   # the id of the site on Piwik
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
