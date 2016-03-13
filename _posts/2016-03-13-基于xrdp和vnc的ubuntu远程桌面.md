@@ -25,5 +25,7 @@ tags : [Linux]
         `org > gnome > desktop > remote-access`
   3. 取消钩选 “requlre-encryption”属性。
 - 搜索“Remote Desktop” 然后更改相应设置：
+
     ![img](http://blog.onlyforyou.xyz/image/remote.jpg)
+    
 - 在windows下使用“远程桌面进行连接”
