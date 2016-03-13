@@ -9,8 +9,9 @@ tags : [Linux]
 # 基于xrdp和vnc的ubuntu远程桌面
 ---
 
+# Install
 - Reference：http://jingyan.baidu.com/article/8ebacdf0cdc64949f75cd555.html
-  + 安装步骤：
+- 安装步骤：
 
   ```
     sudo apt-get install xrdp vnc4server
