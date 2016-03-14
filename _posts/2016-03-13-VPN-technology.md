@@ -1,9 +1,9 @@
 ---
 layout: post
 title: VPN技术
-category: 网络技术
+category: Net
 tagline: Supporting tagline
-tags: [VPN, web]
+tags: [VPN, Net]
 ---
 {% include JB/setup %}
 # VPN技术
