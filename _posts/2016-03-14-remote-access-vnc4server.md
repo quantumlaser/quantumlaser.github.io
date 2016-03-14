@@ -44,10 +44,12 @@ tags : [Linux]
   + 说明：本人在实验室的服务器上将`.vnc/xstartup`放了一份在`/etc/skel`中，因此如果是通过`adduser`新增的用户就不需要进行配置了。
 
 ## 连接使用
+**说明**：第1,2两步需要在命令行(Termimal)操作，因此需要登陆到需要使用vnc4server的用户的命令行。windows下可以使用putty。[windows下putty ssh登陆服务器教程](http://jingyan.baidu.com/article/454316ab5dd974f7a7c03a18.html)。也可以直接去服务器手动登陆，然后打开`Terminal`。
+
 1. 首次运行设置密码：如果当前用户首次使用，需要设置一下密码。如果直接进行步骤2，会提示输入密码。
   + 命令行运行`vnc4passwd`，然后根据提示设置6-8的密码。
   + 忘记密码了，也运行一下`vnc4server`，就可以重新输入密码了。
-2. 服务端运行：首先需要先通过ssh远程登陆服务器([windows下putty ssh登陆服务器教程](http://jingyan.baidu.com/article/454316ab5dd974f7a7c03a18.html))，然后运行`vnc4server -geometry 1366x768 :1`
+2. 服务端运行：`vnc4server -geometry 1366x768 :1`
   + 也可以把后面的`:1`省略(冒号也要省略),系统会自动分配。这里的1时连接的id，后面会用到。如果省略了`:1`,自动分配的id会在命令执行完返回。
   + `-geometry 1366x768` 用来指定分辨率，也可以不指定
 3. 客户端下载：[VNC Viewer](http://www.realvnc.com/download/viewer/)
