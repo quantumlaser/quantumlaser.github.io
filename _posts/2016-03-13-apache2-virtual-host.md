@@ -3,7 +3,7 @@ layout: post
 title: apache2虚拟主机配置
 category: Web
 tagline: Supporting tagline
-tags: [Linux,apache2,Web]
+tags: [Linux,Apache2,Web]
 ---
 {% include JB/setup %}
 # ubuntu 用户管理

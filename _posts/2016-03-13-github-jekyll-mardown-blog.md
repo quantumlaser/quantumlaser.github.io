@@ -3,7 +3,7 @@ layout: post
 title: 搭建Github Page个人博客
 category : Web
 tagline: "Supporting tagline"
-tags : [jekyll, web]
+tags : [Jekyll, Web]
 ---
 {% include JB/setup %}
 # 利用Github page + jekyll + markdown 打造个人博客
