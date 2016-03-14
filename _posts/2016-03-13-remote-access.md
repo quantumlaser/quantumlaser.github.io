@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ubuntu远程桌面
+title: 基于xrdp和vnc的ubuntu远程桌面
 category : Linux
 tagline: "Supporting tagline"
 tags : [Linux]
@@ -20,7 +20,7 @@ tags : [Linux]
   ```
   + 说明：安装xfce4桌面，因为gnome桌面和xrdp有bug。`~/.xsession`对于每一个远程连接的
 用户都需要，因此如果新建立的用户没有此文件，需要手动加入。
-  + xrdp配置文件：`/etc/xrdp/xrdp.ini, /etc/xrdp/startwm.ini`
+  + xrdp主要配置文件：`/etc/xrdp/xrdp.ini, /etc/xrdp/startwm.sh， /etc/xrdp/sesman.ini`
 - 安装完之后(ubuntu 14.04才需要）：
   1. 安装dconf-editor:`sudo apt-get install dconf-editor`
   2. 用Dconf-editor调整，并访问如下配置路径
@@ -57,7 +57,7 @@ port就可以了。
   ```
   + 获取当前会话的port: 打开“远程桌面”，连接的时候，输入用户名、密码的下方多了一个port，默认是-1,如果不更改
 登陆的时候就打开一个新的session。查看port的方法有两种：
-    * 登陆时会有以下窗口，第六行的`commenting to 127.0.0.1: 5915`，其中5915就是`port`:
+    * 登陆时会有以下窗口，第六行的`commenting to 127.0.0.1: 5920`，其中5920就是`port`:
 
     ![img](/image/vnc_port.jpg)
 
@@ -65,5 +65,5 @@ port就可以了。
 
     ![img](/image/vnc_netstat.jpg)
 
-    这样就表示打开了5911-5915 共5个连接。一般最新的一个就是当前打开的连接。
+    这样就表示打开了5916-5920 共5个连接。一般最新的一个就是当前打开的连接，如图中的5920。
   + 再次登陆时，将登陆窗口中的port从-1改成前面获取到的port，就可以重新打开这个会话了。

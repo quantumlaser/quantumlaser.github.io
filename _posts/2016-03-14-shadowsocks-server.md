@@ -74,5 +74,3 @@ tags : [Linux,Shadowsocks,Net]
 
   + 运行：`nohup ssserver -c /usr/local/lib/python2.7/dist-packages/shadowsocks/config.json > log &`
   + 自启：`echo "ssserver -c /usr/local/lib/python2.7/dist-packages/shadowsocks/config.json" >> /etc/rc.local`
-
-  ## 
