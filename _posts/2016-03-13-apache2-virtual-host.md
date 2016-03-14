@@ -1,7 +1,7 @@
 ---
 layout: post
 title: apache2虚拟主机配置
-category: Linux
+category: Web
 tagline: Supporting tagline
 tags: [Linux,apache2,Web]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 搭建Github Page个人博客
-category : 网站建设
+category : Web
 tagline: "Supporting tagline"
 tags : [jekyll, web]
 ---
@@ -20,4 +20,4 @@ tags : [jekyll, web]
 - 上一步解决了首页的css失效问题，但是对于具体的blog的css依然失效，最后发现所有的css指向了:[default.html](https://github.com/quantumlaser/quantumlaser.github.io/blob/master/_includes/themes/twitter/default.html)。通过手动更改18-21行的css路径，终于解决了css问题。原作者此文件[链接](https://github.com/enml/blog/blob/jekyll-blog/_includes/themes/twitter/default.html)
 
 ## Problems
-- 升级kramdown, rouge后代码高亮时不能自动换行，表格没有现况
+- 升级kramdown, rouge后代码高亮时不能自动换行，表格没有现况。官方关于jekyll 3.0 升级说明：[链接](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0)

@@ -35,6 +35,11 @@ tags: [Linux]
 ```
 
 - 给用户增加管理管理员权限：` usermod -a -G adm,sudo newuser`
-
+- 禁止用户登陆：`usermod -s /sbin/nologin newuser`。也可以直接修改`/etc/passwd`文件 
 ## 删除用户
 - `userdel -r newuser` 加`-r`会连带用户文件夹一起删除
+
+## 查看用户与组
+- `/etc/passwd`存放用户信息,一条典型的记录如下
+  `wuzhaohui:x:1000:1000:WuZhaohui,,,:/home/wuzhaohui:/bin/bash`
+- `/etc/group` 存放组
