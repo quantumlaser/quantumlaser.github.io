@@ -13,3 +13,5 @@ tags : [C++]
 ## IO
 - `cin>>str` 遇空格回车停止
 - `getline(cin, str)` 读一行，包括空格，遇到回车、终止符停止。
+## Usage
+- 去除所有空格`str.erase(remove_if(str.begin(), str.end(), isspace), str.end());`
