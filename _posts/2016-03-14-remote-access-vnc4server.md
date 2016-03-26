@@ -10,7 +10,7 @@ tags : [Linux]
 ---
 
 ## 引言
-- 之前一篇[基于xrdp和vnc的ubuntu远程桌面](http://blog.onlyforyou.xyz/2016/03/13/remote-access)中，已经可以实现会话重连的远程桌面了。不过每次都需要手动记下端口名，比较麻烦，使用并不方便。实际上xrdp最终还是调用了vnc。
+- 之前一篇[基于xrdp和vnc的ubuntu远程桌面](/2016/03/13/remote-access)中，已经可以实现会话重连的远程桌面了。不过每次都需要手动记下端口名，比较麻烦，使用并不方便。实际上xrdp最终还是调用了vnc。
 - vnc4server本身就可以开启远程桌面，windows下有支持vnc的客户端。
 - Reference:[Link](http://www.zhukun.net/archives/7907)
 - 如果服务端已经配置好，可以直接跳到**连接使用**一节
