@@ -16,3 +16,4 @@ Reference: [Link](http://www.cnblogs.com/wanghao111/archive/2009/09/05/1560822.h
 - cin.getline()
 - cin.ignore()
 - getline,gets,getchar()
+-
