@@ -1,9 +1,9 @@
 ---
 layout: post
 title: local markdown
-category :
+category : [Tool]
 tagline: "Supporting tagline"
-tags : [C++]
+tags : [Tool]
 ---
 {% include JB/setup %}
 # 本地编写渲染markdown

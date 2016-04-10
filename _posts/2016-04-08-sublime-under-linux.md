@@ -1,15 +1,16 @@
 ---
 layout: post
 title: ubuntu下配置sublime中文与链接
-category :
+category : [Tool]
 tagline: "Supporting tagline"
-tags : [Linux][Tool]
+tags : [Tool,Linux]
 ---
 {% include JB/setup %}
 # ubuntu下配置sublime中文与链接
 
 ## 配置命令行启动
 - 可以 `vi /usr/bin/subl`, 这样就可以`subl`启动了。
+
   ```
   #!/bin/sh
   #exec /opt/sublime_text/sublime_text "$@"
@@ -19,6 +20,7 @@ tags : [Linux][Tool]
 
 ## 配置快捷方式
 - 新建快捷方式
+
   ```
   [Desktop Entry]
   Name=Sublime Text 2
