@@ -9,8 +9,8 @@ tags : [C++]
 # C++ 输入输出总结
 
 ## Reference:
-- [http://www.cnblogs.com/wanghao111/archive/2009/09/05/1560822.html](http://www.cnblogs.com/wanghao111/archive/2009/09/05/1560822.html)
-- [http://www.cnblogs.com/A-Song/archive/2012/01/29/2331204.html](http://www.cnblogs.com/A-Song/archive/2012/01/29/2331204.html)
+- <http://www.cnblogs.com/wanghao111/archive/2009/09/05/1560822.html>
+- <http://www.cnblogs.com/A-Song/archive/2012/01/29/2331204.html>
 
 ## cin
 - cin可以抛弃开头的终止符，但不会丢弃终止符

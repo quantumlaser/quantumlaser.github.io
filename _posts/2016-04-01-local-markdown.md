@@ -22,4 +22,4 @@ tags : [Tool]
   + 支持导出称pdf。
   + 可以试着使用slide.css，制作幻灯片。
   + 如何实现代码语法高亮
-  + 写CV:https://github.com/elipapa/markdown-cv
+  + 写CV:<https://github.com/elipapa/markdown-cv>
