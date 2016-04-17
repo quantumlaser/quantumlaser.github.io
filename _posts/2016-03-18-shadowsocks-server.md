@@ -1,6 +1,6 @@
 ---
 layout: post
-title: shadowsocks搭建
+title: Shadowsocks 服务端搭建
 category : Shadowsocks
 tagline: "Supporting tagline"
 tags : [Linux,Shadowsocks,Net]
@@ -9,7 +9,8 @@ tags : [Linux,Shadowsocks,Net]
 # Centos/Ubuntu下搭建Shadowsocks, 配合ipv6实现免流量上网
 ---
 
-- 原文最初发在本人的CSDN博客：[链接](http://blog.csdn.net/xtdao/article/category/2915525)
+- 原文最初发在本人的CSDN博客：[Link](http://blog.csdn.net/xtdao/article/category/2915525)
+- 分为服务端、客户端两部分。客户端部分：[Link](/2016/03/19/shadowsocks-client)
 
 ## 引言
 - 终所周知，G.F*W的存在阻碍了人类的进步，因此fq已成为一种刚需。另外，某些高校，比如鄙人的某技术学校，逆天而行，开起了校园网流量收费时代。鉴于校园网ipv6流量依然较长期内不会收费，搭建一个既能fq，又能使用ipv6免流量上网就好了。
@@ -26,7 +27,7 @@ tags : [Linux,Shadowsocks,Net]
 - ramnode家性价比较高，不过2015年有几个月总是说我滥用，经常关我服务器，到现在也没找出原因，不过后来就没出现过了。Ping值在校园网环境下约150-250ms，较慢。不过上网没有明显延时。在ipv6环境上google几乎零延时，上国内的百度有明显变慢。
 
 ## Server端部署Shadowsocks
-- 目前Shadowsocks有很多版本，libev, python, go等。其中libev相对而言系统占用小，性能较好。python版github上已被移除，不过可以通过pip安装，后面再说。Server端的系统影响不大，这里以Centos为例。
+- 目前Shadowsocks有很多版本，libev, python, go等。其中libev相对而言系统占用小，性能较好。python版github上已被移除，不过可以通过pip安装，后面再说。Server端的系统影响不大，这里以Centos为例。对于下载源码的安装方式，ubuntu是一样的。
 - Centos下安装Shadowsocks-libev: [Github 链接](https://github.com/shadowsocks/shadowsocks-libev)
   1. 安装必要组件： `yum install build-essential autoconf libtool openssl-devel gcc git -y`
   2. 下载源码编译安装：事先进入待安装路径
