@@ -31,7 +31,7 @@ tags : [Linux,Shadowsocks,Net]
   1. 安装必要组件： `yum install build-essential autoconf libtool openssl-devel gcc git -y`
   2. 下载源码编译安装：事先进入待安装路径
 
-  ```
+  ```shell
   git clone https://github.com/madeye/shadowsocks-libev.git
   cd shadowsocks-libev
   ./configure
@@ -42,7 +42,7 @@ tags : [Linux,Shadowsocks,Net]
   + 命令行：`nohup ss-server -s IP地址 -p 端口 -k 密码 -m 加密方式 &`
     * 例：`nohup ss-server -s 192.168.1.1 -p 10101 -k woshimima -m aes-256-cfb &`
     * 说明：这里ip地址用的就是你vps的ip，可以是ipv4地址，也可以是ipv6地址。端口的话可以稍微随意，但不要占用服务器的特殊端口，本人使用过443，8388，8989端口。加密方式推荐上面的这种加密方式。这一条语句就是实现了一个ip、端口组合的shadowsocks进程。nohup表示输出重定向，&表示后台运行，不加也可以，但是区别你试试就知道了。
-    * 查看进程：通过ps -A | grep ss-server来查看这个进程，通过其id 将其kill。
+    * 查看进程：通过`ps -A | grep ss-server`来查看这个进程，通过其id 将其kill。
     * 多进程：，这样你就可以实现多个ip、端口组合的进程，并且设置不同的密码，这样你可以将你的shadowsocks分享给你的朋友使用。
     * 监听ipv6：通过命令行的方式不能实现ipv4，ipv6的同时监听，需要再开一个ipv6 ip的进程。
     * 开机自启动：`echo "nohup ss-server -s IP地址 -p 端口 -k 密码 -m 加密方式 &" >> /etc/rc.local`
@@ -50,7 +50,7 @@ tags : [Linux,Shadowsocks,Net]
     * 新建：`vi /etc/shadowsocks-libev/config.json`, 事实上此文件的路径和文件名可以任意制定，只需要后面保持一致。
     * 添加一下内容：
 
-    ```
+    ```json
     {
       "server":["[::0]","0.0.0.0"],
       "server_port":8989,

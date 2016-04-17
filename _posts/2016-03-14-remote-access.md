@@ -10,7 +10,7 @@ tags : [Linux]
 ---
 
 ## Install
-- Reference：http://jingyan.baidu.com/article/8ebacdf0cdc64949f75cd555.html
+- Reference：<http://jingyan.baidu.com/article/8ebacdf0cdc64949f75cd555.html>
 - 安装步骤：
 
   ```
