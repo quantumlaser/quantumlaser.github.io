@@ -35,3 +35,5 @@ tags : [Jekyll, Web, Markdown]
    <https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0>
 - 尝试更改一些css，比如改改颜色啊
 - 尝试建立一个http服务，提供点击下载文件功能
+- 提供文章搜索功能，内嵌谷歌搜索？
+- about me 是否可以用md编写，然后跳转到该md渲染的html文件
