@@ -28,13 +28,13 @@ tags : [Linux]
   3. 取消钩选 “requlre-encryption”属性。
 - 搜索“Remote Desktop” 然后更改相应设置(安全->输入密码，可以不勾)：
 
-  ![img](/image/remote.jpg)
+  ![img](/image/remote/remote.jpg)
 
 ## windows下连接
 - 在windows下使用“远程桌面进行连接”：module选择`sesman-Xvnc`
 ,然后输入用户名、密码(可能你的界面里没有port选项，不过没有关系)
 
-  ![img](/image/vnc_login.jpg)
+  ![img](/image/remote/vnc_login.jpg)
 
 ## 会话重连
 - 原理：
@@ -59,11 +59,11 @@ port就可以了。
 登陆的时候就打开一个新的session。查看port的方法有两种：
     * 登陆时会有以下窗口，第六行的`commenting to 127.0.0.1: 5920`，其中5920就是`port`:
 
-    ![img](/image/vnc_port.jpg)
+    ![img](/image/remote/vnc_port.jpg)
 
     * 登陆系统后, 在命令行输入：`netstat tunalp | grep vnc`,可以查看当前用户打开的所有连接：
 
-    ![img](/image/vnc_netstat.jpg)
+    ![img](/image/remote/vnc_netstat.jpg)
 
     这样就表示打开了5916-5920 共5个连接。一般最新的一个就是当前打开的连接，如图中的5920。
   + 再次登陆时，将登陆窗口中的port从-1改成前面获取到的port，就可以重新打开这个会话了。
@@ -76,4 +76,4 @@ port就可以了。
 ## Tab键不能补全
 - 远程桌面中设置，路径是：打开菜单——设置——窗口管理器，或在终端中输入xfwm4-settings打开也行（xfwm4就是xfce4 window manger的缩写），选择键盘，可以看到窗口快捷键中动作一列有“切换同一应用程序的窗口”选项，将该选项的快捷键清除后关闭窗口即可解决问题。
 
-  ![img](/image/xfce_manager.jpg)
+  ![img](/image/remote/xfce_manager.jpg)

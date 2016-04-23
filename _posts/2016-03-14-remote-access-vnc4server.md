@@ -55,7 +55,7 @@ tags : [Linux]
 3. 客户端下载：[VNC Viewer](http://www.realvnc.com/download/viewer/)
 4. 连接：
   + 运行客户端，在VNC Server栏输入：`ip:port`,其中ip为服务器ip，port为(5900+id)，id为第2步指定的或分配的。如果id为1，则port=5901;id为20，则port=5920。
-  ![img](/image/vnc_viewer_login.jpg)
+  ![img](/image/remote/vnc_viewer_login.jpg)
   + 点击Connect，输入在第1步设置的密码，就可以登陆了。
   + 关闭的时候直接关闭窗口，下次直接打开VNC viewer就可以了。
 5. 关闭一个连接：关闭vnc viewer并不会真的关闭这个连接，真正关闭它需要在命令行运行：`vnc4erver -kill :1`，其中的`1`是第2步的id。
