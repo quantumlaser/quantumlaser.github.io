@@ -11,6 +11,9 @@ tags : [Tool]
 ## 当前方案：
 - 目前本人用atom编写md文件，用atom中的markdown preview预览。但是输出称html，pdf等效果一般。
 - 之前使用过sublime 编写预览输出效果都不错。
+
+<!--break-->
+
 - 感觉是因为css文件的使用问题。
 - 目前安装了pandoc，可以生成html，并可以指定css，但是效果依然不理想。
 

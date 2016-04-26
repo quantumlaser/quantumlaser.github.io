@@ -15,6 +15,8 @@ tags : [Linux,Shadowsocks,Net]
 - 本篇希望实现不同平台，包括windows，linux，ios，android，router等的局部和全局的代理，
 以及如何实现ipv6下的免流量上网。
 
+<!--break-->
+
 ## windows下使用
 1.  下载[shadowsocks for Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/3.0/Shadowsocks-3.0.zip)。
 下载完成后，双击那个小飞机，打开shadowsocks。软件后出现在系统的右下角，找到小飞机，右击，可以看到这样的界面：

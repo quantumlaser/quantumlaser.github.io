@@ -15,6 +15,8 @@ tags : [Jekyll, Web, Markdown]
 3. Fork了这个[模板](http://enml.github.io/site/)
   + [Github地址：enml/blog](https://github.com/enml/blog/tree/jekyll-blog)
 
+<!--break-->
+
 ## 说明
 - [kmarkdown 语法](http://platinhom.github.io/2015/11/06/Kramdown-note/)
   - 其中直接连接用`<http://baidu.com>`

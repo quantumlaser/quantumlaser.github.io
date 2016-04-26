@@ -14,6 +14,9 @@ tags : [Linux,Shadowsocks,Net]
 
 ## 引言
 - 终所周知，G.F*W的存在阻碍了人类的进步，因此fq已成为一种刚需。另外，某些高校，比如鄙人的某技术学校，逆天而行，开起了校园网流量收费时代。鉴于校园网ipv6流量依然较长期内不会收费，搭建一个既能fq，又能使用ipv6免流量上网就好了。
+
+<!--break-->
+
 - 目前主流的fq技术有：vpn 和代理。主流的vpn技术详见本人的另一篇blog：[Link](http://blog.onlyforyou.xyz/2016/03/13/VPN-technology)。代理技术也很多，传统的http代理由于不加密不安全，曾经一度很火的GoAgent代理也存在加密问题（最近好像不能用了）。进来基于socks5的shadowsocks代理流行起来。
 - 本人基于shadowsocks技术，平台Centos/Ubuntu, 支持ipv4/ipv6双路代理。
 - 整理整个过程的步骤：

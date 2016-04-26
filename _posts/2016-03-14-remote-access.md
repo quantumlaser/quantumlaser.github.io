@@ -18,9 +18,13 @@ tags : [Linux]
     sudo apt-get install xfce4
     echo xfce4-session >~/.xsession
   ```
+
   + 说明：安装xfce4桌面，因为gnome桌面和xrdp有bug。`~/.xsession`对于每一个远程连接的
 用户都需要，因此如果新建立的用户没有此文件，需要手动加入。
   + xrdp主要配置文件：`/etc/xrdp/xrdp.ini, /etc/xrdp/startwm.sh， /etc/xrdp/sesman.ini`
+
+<!--break-->
+
 - 安装完之后(ubuntu 14.04才需要）：
   1. 安装dconf-editor:`sudo apt-get install dconf-editor`
   2. 用Dconf-editor调整，并访问如下配置路径

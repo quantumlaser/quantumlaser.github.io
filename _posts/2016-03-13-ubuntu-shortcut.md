@@ -13,6 +13,8 @@ tags : [Linux]
 - 找一个现有的cp，或者仿照一下格式手动建立一个，如给安装在`/usr/local/MATLAB`下的Matlab建立快捷方式：
   + 新建文件：`sudo vi Maltab.desktop`
 
+<!--break-->
+
   ```
   Type=Application  
   Name=Matlab  

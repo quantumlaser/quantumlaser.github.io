@@ -18,6 +18,8 @@ tags : [Tool,Linux]
   exec /usr/lib/sublime_text_2/sublime_text
   ```
 
+<!--break-->
+  
 ## 配置快捷方式
 - 新建快捷方式
 

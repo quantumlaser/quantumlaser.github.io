@@ -15,6 +15,9 @@ tags: [VPN, Net]
 2. SoftEther VPN:<http://mawenjian.net/p/1281.html>
     - 支持ipv4，v6。非常强大，有可视化界面
     - 不排除有后门的可能性，不是很推荐
+
+<!--break-->
+
 3. OpenVPN:
     - 有两个版本：
         + 开源版：详见后面几条说明

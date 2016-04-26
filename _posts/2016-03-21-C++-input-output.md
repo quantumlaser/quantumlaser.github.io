@@ -17,6 +17,9 @@ tags : [C++]
 
 ## cin.get()
 - 接受一个字符`c = cin.get()` or `cin.get(c)`。可以接受空格、回车。终止符不丢弃
+
+<!--break-->
+
 - `cin.get(字符数组名,接收字符数目,终止符)` 用来接收一行字符串,可以接收空格。 默认enter终止。终止符不丢弃。
   + 用`cin.get()`读一行，会将enter留在流中，下次用`cin.get()`将会读取enter导致失败。通过
   `cin.get(a,20).get()`可以避免这个影响，但是最好用`cin.getline()`

@@ -16,6 +16,8 @@ tags: [Linux]
 - useradd:`useradd newuser`
   + 仅新增用户，需要手动建立用户home文件夹
 
+<!--break-->
+
 ## 权限管理
 - usermod: 更改用户的权限
 
@@ -35,7 +37,7 @@ tags: [Linux]
 ```
 
 - 给用户增加管理管理员权限：` usermod -a -G adm,sudo newuser`
-- 禁止用户登陆：`usermod -s /sbin/nologin newuser`。也可以直接修改`/etc/passwd`文件 
+- 禁止用户登陆：`usermod -s /sbin/nologin newuser`。也可以直接修改`/etc/passwd`文件
 ## 删除用户
 - `userdel -r newuser` 加`-r`会连带用户文件夹一起删除
 

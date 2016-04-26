@@ -18,6 +18,9 @@ tags : [C++]
 - IO
   + `cin>>str` 遇空格回车停止
   + `getline(cin, str)` 读一行，包括空格，遇到回车、终止符停止。
+
+<!--break-->
+
 - 基本用法
   + 长度：`str.size()`
   +
